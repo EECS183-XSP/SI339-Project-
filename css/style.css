@@ -1,20 +1,29 @@
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
+html {
+	scroll-behavior: smooth; 
+}
+
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(245, 227, 205, 0.897);
     margin:1%;
     padding:1%;
-    font-size:150%;
+    font-size:100%;
+    overflow-x:hidden;
+    position: relative;
 }
 
 /*Make the h1 heading bigger with a bold font*/
 h1{
+    background-color: rgb(238, 178, 173);
     font-size: 2em; 
     font-weight: bold;
 }
 
 
 .active{
-    background: green;
+    background: rgb(212, 203, 203);
     text-transform: uppercase;
     text-align: center;
 }
@@ -22,17 +31,23 @@ h1{
 
 /*Style the images*/
 img{
-    height: 200px;
-    width:auto;
-    border: 3px solid rgb(99, 190, 104);
-    padding: 25px;
+    display: inline-block;
+    border: 3px solid goldenrod;
     border-radius: 10px;
     margin: 10px;
+    align-items: center;
+}
+
+.fidi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /*Make the h2 heading match h1*/
 h2{
     font-size: 2em; 
+    font-style: italic;
     font-weight: bold;
 }
 
@@ -52,7 +67,7 @@ header, nav, main, h1, footer{
 /*Change the styling for all of the list 
 items in the nav section*/
 nav li{
-    background-color: #7fb85d;
+    background-color: #f0b7b4;
     padding:10px;
     width:25%;
     border:1px solid black;
