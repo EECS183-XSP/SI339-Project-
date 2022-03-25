@@ -57,9 +57,22 @@
 	text-align: center; 
 }
 .contact_form h1{
+  animation-duration: 3s;
+  animation-name: slidein;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 50px;
 	text-transform: capitalize;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .form_details{
