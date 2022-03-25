@@ -1,143 +1,269 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.*/
-html {
-	scroll-behavior: smooth; 
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+a{ 
+  color: white;
+}
+.nav_box{
+  font-family:'Josefin Sans';
+  font-size: 20px;
+}
+.nav_box ul li:hover{
+	background-color: goldenrod;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 600px 600px;
-  gap: 50px;
-  margin-top: auto;
-  height: 2000px;
-  justify-items: center;
+.nav_box ul li a:hover{
+	color: white;
+}
+
+ul li{
+	width: 120px;
+	float:left;
+	text-align:center;
+	text-size-adjust: 200px;
+}
+
+body{
+  background: #111222;
+  font-family: 'Crimson Pro', serif;
+}
+
+section{
+  position: auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fff;
+}
+
+.container{
+  position: auto;
+  display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items:center;
+  flex-direction: column;
+  overflow:hidden;
 }
 
-  body{
-    background-color: rgba(245, 227, 205, 0.897);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:1%;
-    padding:1%;
-    font-size:100%;
-    overflow-x:hidden;
-    position: relative;
-  }
- 
-  
-  h1{
-    background-color: rgb(238, 178, 173);
-    font-size: 2em; 
-    font-weight: bold;
-  }
-  
-  
-  .active{
-    background: rgb(212, 203, 203);
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  
-  /*Style the images*/
-  img{
-    display: inline-block;
-    border: 3px solid goldenrod;
-    border-radius: 10px;
-    margin: 10px;
-    align-items: center;
-  }
+.main-title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4em; 
+  margin-bottom: 10px;
+}
+.description{
+  max-width: 910px;
+  font-size:20px;
+  margin-bottom:50px;
+}
+.tacombi_card{
+  display: grid;
+  position: relative;
+  width: 1150px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: inline;
+}
 
-  .tacombi_card, .hitw_card, .ohara_card, .route66_card{
-    justify-content: space-between;
-    align-content: center;
-    gap: 20px;
-  }
+.tacombi_card .tacombi_photo{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
 
-  .tacombi_photo, .hitw_photo, .ohara_photo, .route66_photo{
-    display: flex;
-    justify-content: space-evenly;
-  }
+.tacombi_img{
+  position: absolute;
+  width: 50%;
+  border-radius: 10px;
+}
+.tacombi_card .text-box{
+  position: absolute;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:10px;
+  transform: translate(420px,-350px);
+}
 
-  
-  h2{
-    font-size: 2em; 
-    font-style: italic;
-    font-weight:bold;
-  
-  }
-  
-  /*Improve the spacing for paragraphs AND headings*/
-  p, h1, h2 {
-    padding: 20px;
-  }
-  
-  /*Add borders around the main components and some
-  space too*/
-  header, nav, main, h1, footer{
-    border: 2px solid goldenrod;
-    margin: 10px 0;
-  }
-  
-  nav{
-    display: flexbox;
-  }
-  
-  .link, .address{
-    display: flex;
-    justify-content: center;
-  }
+.tacombi_card .text-box h4{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
 
-  /*Change the styling for all of the list 
-  items in the nav section*/
-  nav li{
-    background-color: #f0b7b4;
-    padding:10px;
-    width:25%;
-    border:1px solid black;
-    display: inline-block;
-    width: 20%;
-  }
+.highlights{
+  font-size: 100%;
+  font-style: bold; 
+  font-weight: bolder;
+  margin: 10px;
+  background-color: rgb(114, 83, 114);
+}
 
-  .speciality1{
-    font-size: 100%;
-    font-style: italic; 
-    font-weight: lighter;
-    margin: 10px;
-    background-color: #d6b864;
-  }
+.link{
+  text-align: center;
+  font-size: 100%;
+  font-style: bold; 
+  font-weight: bolder;
+  margin: 10px;
+}
 
-  .speciality2{
-    font-size: 100%;
-    font-style: italic; 
-    font-weight: lighter;
-    margin: 10px;
-    background-color: #c6db67;
-  }
+.address{
+  text-align: center;
+  font-size: 100%;
+  font-style: bold; 
+  font-weight: bolder;
+  margin: 10px;
+}
 
-  .speciality3{
-    font-size: 100%;
-    font-style: italic; 
-    font-weight: lighter;
-    margin: 10px;
-    background-color: #75a9e6;
-  }
+.hitw_card{
+  display: grid;
+  position: relative;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: inline;
+}
 
-  .speciality4{
-    font-size: 100%;
-    font-style: italic; 
-    font-weight: lighter;
-    margin: 10px;
-    background-color: #eeb29b;
-  }
+.hitw_content{
+  width: 400px;
+  margin-left: 50px;
+}
 
-  img:hover{
-    filter: grayscale();
-    border: dashed; 
-  
-  /*Added this so the links stay the same color*/
-  a:visited{color:#0000FF}
-  
-  
-  
+.hitw_card .text-box{
+  position: absolute;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:10px;
+  transform: translate(-225px,-125px);
+}
+
+.hitw_card .text-box h4{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.hitw_card .hitw_photo{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  transform: translate(200px,-120px);
+}
+
+.hitw_img{
+  position: absolute;
+  border-radius: 10px;
+}
+
+.ohara_card{
+  display: grid;
+  position: relative;
+  width: 1150px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: inline;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.ohara_card .ohara_photo{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  transform: translate(225px,-290px);
+}
+
+.ohara_img{
+  position: absolute;
+  width: 50%;
+  border-radius: 10px;
+}
+.text-box{
+  position: absolute;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:10px;
+  transform: translate(680px,-750px);
+}
+
+.ohara_card .text-box h4{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.R66_card{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: inline;
+}
+
+.R66_content{
+  width: 400px;
+  margin-left: 50px;
+}
+
+.R66_card .text-box{
+  position: absolute;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:10px;
+  transform: translate(-225px,-525px);
+}
+
+.R66_card .text-box h4{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.R66_card .R66_photo{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  transform: translate(200px,-520px);
+}
+
+.R66_img{
+  position: absolute;
+  border-radius: 10px;
+}
+
+.gallery{
+  display: grid; 
+  grid-template-columns: repeat(9,1fr);
+  overflow: scroll;
+  justify-items: center;
+  padding: 0px;
+}
+
+.gallery{
+  animation:fadeIn 5s;
+}
+
+footer{
+  color: white;
+  font-family: Josefin Sans;
+}

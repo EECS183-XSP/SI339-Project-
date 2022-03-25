@@ -1,9 +1,9 @@
 body{
-	font-family:'Garamond';
+	font-family: 'Josefin Sans', sans-serif;
 	color: white;
 	background:url("../image/background.jpeg"),no-repeat; 
 	background-size:cover;
-	background-color: rgba(0, 0, 0, 0.603);
+	background-color: rgba(0, 0, 0, 0.74);
 	background-blend-mode: multiply;
 }
 .main{
@@ -56,11 +56,13 @@ ul li a{
 	text-align: center; 
 }
 .introduction h1{
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 50px;
 	text-transform: capitalize;
 }
 
 .introduction p{
+	font-family: 'Crimson Pro', serif;
 	padding:20px;
 	font-size: 20px;
 }
@@ -72,6 +74,7 @@ button{
 	font-size: 18px;
 	padding: 10px 25px;
 	border-radius: 6px;
+	font-family: 'Crimson Pro', serif;
 }
 
 button:hover{
